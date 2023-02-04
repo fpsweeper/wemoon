@@ -1,0 +1,564 @@
+<main>
+  <div class="position-relative">
+    <section class="section section-sm section-hero section-shaped" style="margin-top: 50px;">
+      <div class="shape shape-style-1 shape-dark">
+      </div>
+      <div class="container shape-container d-flex align-items-center">
+        <div class="col px-0">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-lg-6 text-center">
+              <img src="./assets/img/brand/logo.png" style="width: 5000px; height: 400px;" class="img-fluid">
+            </div>
+            <div class="col-lg-6 text-center">
+              
+              <p class="lead text-white" style="font-family: 'Manrope'; font-size: 25px;">WeMoon is an open source web3 platform using HelloMoon API for learning purposes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  </div>
+  
+  <section class="section section-sm section-hero section-shaped">
+    <div class="shape shape-style-1 shape-dark">
+    </div>
+
+  <div class="container pb-100" style="border: 1px white solid; border-radius: 2em;">
+    <div class="row text-center justify-content-center">
+      <div class="col-lg-5" style="background-color: white; border-radius: 2em; position: relative; top: -28px;">
+        <h2 class="display-3" style="color: black; font-family: 'Secular One'; ">DeFi</h2>
+      </div>
+    </div>
+
+    <div *ngIf="jupiterStats != null" class="row row-grid mt-5">
+      
+      <div class="col-lg-12" style="margin-bottom: 10px; display: block; margin-top: 10px;">
+        <div class="col-lg-3" style="padding: 0; display: inline-block;">
+          <h2 class="display-3" style="color: white; font-family: 'Secular One'; text-align: left; font-size: 18px; display: inline-block;">Jupiter Current Stats</h2>
+        </div>
+        <div class="col-lg-9" style="display: inline-block;">
+          <hr style="border: 1px white solid; display: inline-block; width: 100%; padding: 0; margin: 0; margin-left: 10px">
+        </div>
+      </div>
+
+      <div class="col-lg-4" style="padding-left: 5px; padding-left: 5px;">
+        <div class="col-lg-12" style="padding: 0; border: 1px white solid; border-radius: 2em;">
+          <div class="col-lg-12" style="padding: 0;">
+            <div class="col-lg-12" style="background-color: white; width: 100%; border-radius: 2em 2em 0 0;">
+              <h5 class="mt-3" style="display: inline-block; margin-left: 5px; color: black; text-align: center;">Last 24 Hours</h5>
+            </div>
+            <div class="col-lg-12" style="display: block;">
+              <div class="col-lg-5" style="display: inline-block;">
+                <p class="text-white mt-3" style="text-align: left; font-weight: bold;">Volume (USD)</p>
+              </div>
+              <div class="col-lg-7" style="display: inline-block;">
+                <p class="text-white mt-3">{{jupiterStats.usdVolume24h}}</p>
+              </div>
+            </div>
+            
+            <div class="col-lg-12" style="display: block;">
+              <div class="col-lg-5" style="display: inline-block;">
+                <p class="text-white mt-3" style="text-align: left; font-weight: bold;">Transactions</p>
+              </div>
+              <div class="col-lg-7" style="display: inline-block;">
+                <p class="text-white mt-3">{{jupiterStats.numTxns24h}}</p>
+              </div>
+            </div>
+
+            <div class="col-lg-12" style="display: block;">
+              <div class="col-lg-5" style="display: inline-block;">
+                <p class="text-white mt-3" style="text-align: left; font-weight: bold;">Users</p>
+              </div>
+              <div class="col-lg-7" style="display: inline-block;">
+                <p class="text-white mt-3">{{jupiterStats.numUsers24h}}</p>
+              </div>
+            </div>
+          </div>
+        </div>   
+      </div>
+           
+      <div class="col-lg-4" style="padding-left: 5px; padding-left: 5px;">
+        <div class="col-lg-12" style="padding: 0; border: 1px white solid; border-radius: 2em;">
+          <div class="col-lg-12" style="padding: 0;">
+            <div class="col-lg-12" style="background-color: white; width: 100%; border-radius: 2em 2em 0 0;">
+              <h5 class="mt-3" style="display: inline-block; margin-left: 5px; color: black; text-align: center;">Last 7 Days</h5>
+            </div>
+            <div class="col-lg-12" style="display: block;">
+              <div class="col-lg-5" style="display: inline-block;">
+                <p class="text-white mt-3" style="text-align: left; font-weight: bold;">Volume (USD)</p>
+              </div>
+              <div class="col-lg-7" style="display: inline-block;">
+                <p class="text-white mt-3">{{jupiterStats.usdVolume7d}}</p>
+              </div>
+            </div>
+            
+            <div class="col-lg-12" style="display: block;">
+              <div class="col-lg-5" style="display: inline-block;">
+                <p class="text-white mt-3" style="text-align: left; font-weight: bold;">Transactions</p>
+              </div>
+              <div class="col-lg-7" style="display: inline-block;">
+                <p class="text-white mt-3">{{jupiterStats.numTxns7d}}</p>
+              </div>
+            </div>
+
+            <div class="col-lg-12" style="display: block;">
+              <div class="col-lg-5" style="display: inline-block;">
+                <p class="text-white mt-3" style="text-align: left; font-weight: bold;">Users</p>
+              </div>
+              <div class="col-lg-7" style="display: inline-block;">
+                <p class="text-white mt-3">{{jupiterStats.numUsers7d}}</p>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+         
+      <div class="col-lg-4" style="padding-left: 5px; padding-left: 5px;">
+        <div class="col-lg-12" style="padding: 0; border: 1px white solid; border-radius: 2em;">
+          <div class="col-lg-12" style="padding: 0;">
+            <div class="col-lg-12" style="background-color: white; width: 100%; border-radius: 2em 2em 0 0;">
+              <h5 class="mt-3" style="display: inline-block; margin-left: 5px; color: black; text-align: center;">Last Month</h5>
+            </div>
+            <div class="col-lg-12" style="display: block;">
+              <div class="col-lg-5" style="display: inline-block;">
+                <p class="text-white mt-3" style="text-align: left; font-weight: bold;">Volume (USD)</p>
+              </div>
+              <div class="col-lg-7" style="display: inline-block;">
+                <p class="text-white mt-3">{{jupiterStats.usdVolume30d}}</p>
+              </div>
+            </div>
+            
+            <div class="col-lg-12" style="display: block;">
+              <div class="col-lg-5" style="display: inline-block;">
+                <p class="text-white mt-3" style="text-align: left; font-weight: bold;">Transactions</p>
+              </div>
+              <div class="col-lg-7" style="display: inline-block;">
+                <p class="text-white mt-3">{{jupiterStats.numTxns30d}}</p>
+              </div>
+            </div>
+
+            <div class="col-lg-12" style="display: block;">
+              <div class="col-lg-5" style="display: inline-block;">
+                <p class="text-white mt-3" style="text-align: left; font-weight: bold;">Users</p>
+              </div>
+              <div class="col-lg-7" style="display: inline-block;">
+                <p class="text-white mt-3">{{jupiterStats.numUsers30d}}</p>
+              </div>
+            </div>
+          </div>
+        </div>  
+      </div>
+        
+    </div>
+
+    
+    <div class="col-lg-12" style="margin-bottom: 10px; display: block; padding: 0; margin-top: 10px;">
+      <div class="col-lg-3" style="display: inline-block; padding: 0;">
+        <h2 class="display-3" style="color: white; font-family: 'Secular One'; text-align: left; font-size: 18px; ">Jupiter Pair Volume</h2>
+      </div>
+      <div class="col-lg-9" style="display: inline-block;">
+        <hr style="border: 1px white solid; width: 100%; padding: 0; margin: 0; margin-left: 10px">
+      </div>
+    </div>
+
+    <div class="row text-center justify-content-center" >
+      <div class="col-lg-8 profile-label-2" style="padding-bottom: 10px; margin-top: 20px;">
+        <div class="form__group field" style="width: 100%;">
+            <input type="input" class="form__field" placeholder="Mint address" required 
+            (keyup.enter)="searchJup()" [(ngModel)]="swapsearch" />
+            <label for="name" class="form__label">Swap Pair (Ex: USDC - wSOL)</label>
+        </div>
+        <div *ngIf="loadingJup" class="loader" style="right: 5px;">
+            <div class="inner one"></div>
+            <div class="inner two"></div>
+            <div class="inner three"></div>
+        </div>
+    </div>
+    </div>
+
+    <div *ngIf="pair != null" class="row text-center justify-content-center" style="margin-top: 20px;">
+      <div class="col-lg-6" style="padding-left: 5px; padding-left: 5px;">
+        <div class="col-lg-12" style="padding: 0; border: 1px white solid; border-radius: 2em;">
+          <div class="col-lg-12" style="padding: 0;">
+            <div class="col-lg-12" style="background-color: white; width: 100%; border-radius: 2em 2em 0 0;">
+              <h5 class="mt-3" style="display: inline-block; margin-left: 5px; color: black; text-align: center;">{{pair.swapPair}} Volume</h5>
+            </div>
+            <div class="col-lg-12" style="display: block;">
+              <div class="col-lg-5" style="display: inline-block;">
+                <p class="text-white mt-3" style="text-align: left; font-weight: bold;">24H Volume (USD)</p>
+              </div>
+              <div class="col-lg-7" style="display: inline-block;">
+                <p class="text-white mt-3">{{pair.usdVolume24Hr}}</p>
+              </div>
+            </div>
+            
+            <div class="col-lg-12" style="display: block;">
+              <div class="col-lg-5" style="display: inline-block;">
+                <p class="text-white mt-3" style="text-align: left; font-weight: bold;">7D Volume (USD)</p>
+              </div>
+              <div class="col-lg-7" style="display: inline-block;">
+                <p class="text-white mt-3">{{pair.usdVolume7D}}</p>
+              </div>
+            </div>
+
+            <div class="col-lg-12" style="display: block;">
+              <div class="col-lg-5" style="display: inline-block;">
+                <p class="text-white mt-3" style="text-align: left; font-weight: bold;">30D Volume (USD)</p>
+              </div>
+              <div class="col-lg-7" style="display: inline-block;">
+                <p class="text-white mt-3">{{pair.usdVolume30D}}</p>
+              </div>
+            </div>
+          </div>
+        </div>   
+      </div>
+    </div>
+
+    <div class="col-lg-12" style="display: block; padding: 0; margin-top: 10px; margin-bottom: 10px;">
+      <div class="col-lg-3" style="display: inline-block; padding: 0;">
+        <h2 class="display-3" style="color: white; font-family: 'Secular One'; text-align: left; font-size: 18px;">Tokens</h2>
+      </div>
+      <div class="col-lg-9" style="display: inline-block;">
+        <hr style="border: 1px white solid; width: 100%; padding: 0; margin: 0; margin-left: 10px">
+      </div>
+    </div>
+    
+
+    <div class="row text-center justify-content-center" >
+      <div class="col-lg-8 profile-label-2" style="padding-bottom: 10px; margin-top: 20px;">
+        <div class="form__group field" style="width: 100%;">
+            <input type="input" class="form__field" placeholder="Mint address" required 
+            (keyup.enter)="searchToken()" [(ngModel)]="tokensearch" />
+            <label for="name" class="form__label">Token Mint Address</label>
+        </div>
+        <div *ngIf="loadingToken" class="loader" style="right: 5px;">
+            <div class="inner one"></div>
+            <div class="inner two"></div>
+            <div class="inner three"></div>
+        </div>
+    </div>
+    </div>
+
+    <div *ngIf="tokendata != null" class="row text-center justify-content-center" style="margin-top: 20px;">
+
+      <div *ngIf="tokenmetadata != null" class="col-lg-12" style="padding-left: 5px; padding-left: 5px; margin-bottom: 10px; display: block;">
+        <div class="col-lg-2" style="display: inline-block;"></div>
+        <div class="col-lg-8" style="padding: 0; border: 1px white solid; border-radius: 2em; display: inline-block;">
+          <div class="col-lg-12" style="padding: 0;">
+            <div class="col-lg-12" [ngClass]="expandTokenData ? 'expanded' : 'notexpanded'" style="background-color: white; width: 100%;">
+              <a class="nav-link no-caret" style="display: block;" (click)="tokenDataClicked()">
+                <i *ngIf="expandTokenData" class="fa fa-caret-down" style="color: black; display: inline-block; margin-right: 10px;"></i>
+                <i *ngIf="!expandTokenData" class="fa fa-caret-right" style="color: black; display: inline-block; margin-right: 10px;"></i>
+                <h5 class="mt-3" style="display: inline-block; margin-left: 5px; color: black; text-align: left;">{{tokenmetadata.symbol}} Last Day Statistics</h5>
+              </a>
+            </div>
+            <div *ngIf="expandTokenData" class="col-lg-12" style="display: block;">
+              <div class="col-lg-4" style="display: inline-block;">
+                <p class="text-white mt-3" style="text-align: left; font-weight: bold;">Mint</p>
+              </div>
+              <div class="col-lg-8" style="display: inline-block;">
+                <p class="text-white mt-3">{{tokenmetadata.mint}}</p>
+              </div>
+              <div class="col-lg-4" style="display: inline-block;">
+                <p class="text-white mt-3" style="text-align: left; font-weight: bold;">Symbol</p>
+              </div>
+              <div class="col-lg-8" style="display: inline-block;">
+                <p class="text-white mt-3">{{tokenmetadata.symbol}}</p>
+              </div>
+              <div class="col-lg-4" style="display: inline-block;">
+                <p class="text-white mt-3" style="text-align: left; font-weight: bold;">Decimals</p>
+              </div>
+              <div class="col-lg-8" style="display: inline-block;">
+                <p class="text-white mt-3">{{tokenmetadata.decimals}}</p>
+              </div>
+              <div class="col-lg-4" style="display: inline-block;">
+                <p class="text-white mt-3" style="text-align: left; font-weight: bold;">Total Holders</p>
+              </div>
+              <div class="col-lg-8" style="display: inline-block;">
+                <p class="text-white mt-3">{{tokenmetadata.totalHolders}}</p>
+              </div>
+              <div class="col-lg-4" style="display: inline-block;">
+                <p class="text-white mt-3" style="text-align: left; font-weight: bold;">Latest Price</p>
+              </div>
+              <div class="col-lg-8" style="display: inline-block;">
+                <p class="text-white mt-3">{{tokenmetadata.latest_price}}</p>
+              </div>
+              <div class="col-lg-4" style="display: inline-block;">
+                <p class="text-white mt-3" style="text-align: left; font-weight: bold;">Price Change</p>
+              </div>
+              <div class="col-lg-8" style="display: inline-block;">
+                <p class="text-white mt-3">{{tokenmetadata.priceChange}}</p>
+              </div>
+              <div class="col-lg-4" style="display: inline-block;">
+                <p class="text-white mt-3" style="text-align: left; font-weight: bold;">Active Users</p>
+              </div>
+              <div class="col-lg-8" style="display: inline-block;">
+                <p class="text-white mt-3">{{tokenmetadata.activeUsers}}</p>
+              </div>
+              <div class="col-lg-4" style="display: inline-block;">
+                <p class="text-white mt-3" style="text-align: left; font-weight: bold;">New Users</p>
+              </div>
+              <div class="col-lg-8" style="display: inline-block;">
+                <p class="text-white mt-3">{{tokenmetadata.newUsers}}</p>
+              </div>
+              <div class="col-lg-4" style="display: inline-block;">
+                <p class="text-white mt-3" style="text-align: left; font-weight: bold;">Buyers</p>
+              </div>
+              <div class="col-lg-8" style="display: inline-block;">
+                <p class="text-white mt-3">{{tokenmetadata.buyers}}</p>
+              </div>
+              <div class="col-lg-4" style="display: inline-block;">
+                <p class="text-white mt-3" style="text-align: left; font-weight: bold;">Sellers</p>
+              </div>
+              <div class="col-lg-8" style="display: inline-block;">
+                <p class="text-white mt-3">{{tokenmetadata.sellers}}</p>
+              </div>
+              <div class="col-lg-4" style="display: inline-block;">
+                <p class="text-white mt-3" style="text-align: left; font-weight: bold;">Volume</p>
+              </div>
+              <div class="col-lg-8" style="display: inline-block;">
+                <p class="text-white mt-3">{{tokenmetadata.volume}}</p>
+              </div>
+            </div>
+          </div>
+        </div>   
+        <div class="col-lg-2" style="display: inline-block;"></div>
+      </div>
+
+      <div class="col-lg-6" style="padding-left: 5px; padding-left: 5px;">
+        <div class="col-lg-12" style="padding: 0; border: 1px white solid; border-radius: 2em;">
+          <div class="col-lg-12" style="padding: 0;">
+            <div class="col-lg-12" style="background-color: rgba(78, 148, 61, 0.5); width: 100%; border-radius: 2em 2em 0 0;">
+              <h5 class="mt-3" style="display: inline-block; margin-left: 5px; color: black; text-align: center;">{{tokendata[0].symbol}} Buy Volume</h5>
+            </div>
+            <div class="col-lg-12" style="display: block;">
+              <div class="col-lg-5" style="display: inline-block;">
+                <p class="text-white mt-3" style="text-align: left; font-weight: bold;">24H Volume (USD)</p>
+              </div>
+              <div class="col-lg-7" style="display: inline-block;">
+                <p class="text-white mt-3">{{tokendata[0].usdVol24Hr}}</p>
+              </div>
+            </div>
+            
+            <div class="col-lg-12" style="display: block;">
+              <div class="col-lg-5" style="display: inline-block;">
+                <p class="text-white mt-3" style="text-align: left; font-weight: bold;">7D Volume (USD)</p>
+              </div>
+              <div class="col-lg-7" style="display: inline-block;">
+                <p class="text-white mt-3">{{tokendata[0].usdVol7D}}</p>
+              </div>
+            </div>
+
+            <div class="col-lg-12" style="display: block;">
+              <div class="col-lg-5" style="display: inline-block;">
+                <p class="text-white mt-3" style="text-align: left; font-weight: bold;">30D Volume (USD)</p>
+              </div>
+              <div class="col-lg-7" style="display: inline-block;">
+                <p class="text-white mt-3">{{tokendata[0].usdVol30D}}</p>
+              </div>
+            </div>
+          </div>
+        </div>   
+      </div>
+      <div class="col-lg-6" style="padding-left: 5px; padding-left: 5px;">
+        <div class="col-lg-12" style="padding: 0; border: 1px white solid; border-radius: 2em;">
+          <div class="col-lg-12" style="padding: 0;">
+            <div class="col-lg-12" style="background-color: rgba(224, 31, 5, 0.5); width: 100%; border-radius: 2em 2em 0 0;">
+              <h5 class="mt-3" style="display: inline-block; margin-left: 5px; color: black; text-align: center;">{{tokendata[0].symbol}} Sell Volume</h5>
+            </div>
+            <div class="col-lg-12" style="display: block;">
+              <div class="col-lg-5" style="display: inline-block;">
+                <p class="text-white mt-3" style="text-align: left; font-weight: bold;">24H Volume (USD)</p>
+              </div>
+              <div class="col-lg-7" style="display: inline-block;">
+                <p class="text-white mt-3">{{tokendata[1].usdVol24Hr}}</p>
+              </div>
+            </div>
+            
+            <div class="col-lg-12" style="display: block;">
+              <div class="col-lg-5" style="display: inline-block;">
+                <p class="text-white mt-3" style="text-align: left; font-weight: bold;">7D Volume (USD)</p>
+              </div>
+              <div class="col-lg-7" style="display: inline-block;">
+                <p class="text-white mt-3">{{tokendata[1].usdVol7D}}</p>
+              </div>
+            </div>
+
+            <div class="col-lg-12" style="display: block;">
+              <div class="col-lg-5" style="display: inline-block;">
+                <p class="text-white mt-3" style="text-align: left; font-weight: bold;">30D Volume (USD)</p>
+              </div>
+              <div class="col-lg-7" style="display: inline-block;">
+                <p class="text-white mt-3">{{tokendata[1].usdVol30D}}</p>
+              </div>
+            </div>
+          </div>
+        </div>   
+      </div>
+    </div>
+    <div class="row text-center justify-content-center" style="margin-top: 10px;">
+      <div class="col-lg-12 justify-content-center">
+        <canvas id="canvas2"></canvas>
+      </div>
+    </div>
+
+    <div class="col-lg-12" style="display: block; padding: 0; margin-top: 10px; margin-bottom: 10px;">
+      <div class="col-lg-4" style="display: inline-block; padding: 0;">
+        <h2 class="display-3" style="color: white; font-family: 'Secular One'; text-align: left; font-size: 18px;">Top 5 Swapping Pairs Weekly (Whole Market)</h2>
+      </div>
+      <div class="col-lg-8" style="display: inline-block;">
+        <hr style="border: 1px white solid; width: 100%; padding: 0; margin: 0; margin-left: 10px">
+      </div>
+    </div>
+
+    <div class="row text-center justify-content-center" >
+      <div class="col-lg-3"></div>
+      <div class="col-lg-6 justify-content-center">
+        <canvas id="canvas" height="500px" width="500px"></canvas>
+      </div>
+      <div class="col-lg-3"></div>
+    </div>
+  </div>
+
+  <div class="container pb-100" style="border: 1px white solid; border-radius: 2em; margin-top: 50px;">
+    <div class="row text-center justify-content-center">
+      <div class="col-lg-5" style="background-color: white; border-radius: 2em; position: relative; top: -28px;">
+        <h2 class="display-3" style="color: black; font-family: 'Secular One'; ">NFTs</h2>
+      </div>
+    </div>
+
+      <div class="col-lg-12" style="margin-bottom: 10px; display: block; margin-top: 10px;">
+        <div class="col-lg-3" style="padding: 0; display: inline-block;">
+          <h2 class="display-3" style="color: white; font-family: 'Secular One'; text-align: left; font-size: 18px; display: inline-block;">Cumulative NFT owners over time</h2>
+        </div>
+        <div class="col-lg-9" style="display: inline-block;">
+          <hr style="border: 1px white solid; display: inline-block; width: 100%; padding: 0; margin: 0; margin-left: 10px">
+        </div>
+      </div>
+
+      <div class="row text-center justify-content-center" style="margin-top: 10px;">
+        <div class="col-lg-12 justify-content-center">
+          <canvas id="canvas3"></canvas>
+        </div>
+      </div>
+        
+    
+    <div class="col-lg-12" style="margin-bottom: 10px; display: block; padding: 0; margin-top: 10px;">
+      <div class="col-lg-3" style="display: inline-block; padding: 0;">
+        <h2 class="display-3" style="color: white; font-family: 'Secular One'; text-align: left; font-size: 18px; ">Collections</h2>
+      </div>
+      <div class="col-lg-9" style="display: inline-block;">
+        <hr style="border: 1px white solid; width: 100%; padding: 0; margin: 0; margin-left: 10px">
+      </div>
+    </div>
+
+    <div class="row text-center justify-content-center" >
+      <div class="col-lg-2"></div>
+      <div class="col-lg-8 profile-label-2" style="padding-bottom: 10px; margin-top: 20px;">
+        <div class="form__group field" style="width: 100%;">
+            <input type="input" class="form__field" placeholder="Mint address" required 
+            (keyup.enter)="searchCollection()" [(ngModel)]="collectionsearch" />
+            <label for="name" class="form__label">Hellomoon Collection Id </label>
+        </div>
+        <div *ngIf="loadingCollection" class="loader" style="right: 5px;">
+            <div class="inner one"></div>
+            <div class="inner two"></div>
+            <div class="inner three"></div>
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <a href="https://www.hellomoon.io/id?search=collection" target="_blank" class="nav-link no-caret">Get Collection Id</a>
+      </div>
+    </div>
+
+    <div *ngIf="collectiondata != null" class="row text-center justify-content-center" style="margin-top: 20px;">
+
+      <div class="col-lg-12" style="padding-left: 5px; padding-left: 5px; margin-bottom: 10px; display: block;">
+        <div class="col-lg-2" style="display: inline-block;"></div>
+        <div class="col-lg-8" style="padding: 0; border: 1px white solid; border-radius: 2em; display: inline-block;">
+          <div class="col-lg-12" style="padding: 0;">
+            <div class="col-lg-12" [ngClass]="expandCollData ? 'expanded' : 'notexpanded'" style="background-color: white; width: 100%;">
+              <a class="nav-link no-caret" style="display: block;" (click)="collDataClicked()">
+                <i *ngIf="expandCollData" class="fa fa-caret-down" style="color: black; display: inline-block; margin-right: 10px;"></i>
+                <i *ngIf="!expandCollData" class="fa fa-caret-right" style="color: black; display: inline-block; margin-right: 10px;"></i>
+                <h5 class="mt-3" style="display: inline-block; margin-left: 5px; color: black; text-align: left;">{{collectiondata.name}}</h5>
+              </a>
+            </div>
+            <div *ngIf="expandCollData" class="col-lg-12" style="display: block;">
+              <div class="col-lg-4" style="display: inline-block;">
+                <p class="text-white mt-3" style="text-align: left; font-weight: bold;">Name</p>
+              </div>
+              <div class="col-lg-8" style="display: inline-block;">
+                <p class="text-white mt-3">{{collectiondata.name}}</p>
+              </div>
+              <div class="col-lg-4" style="display: inline-block;">
+                <p class="text-white mt-3" style="text-align: left; font-weight: bold;">Supply</p>
+              </div>
+              <div class="col-lg-8" style="display: inline-block;">
+                <p class="text-white mt-3">{{collectiondata.supply}}</p>
+              </div>
+              <div class="col-lg-4" style="display: inline-block;">
+                <p class="text-white mt-3" style="text-align: left; font-weight: bold;">Current Owner Count</p>
+              </div>
+              <div class="col-lg-8" style="display: inline-block;">
+                <p class="text-white mt-3">{{collectiondata.currentOwnerCount}}</p>
+              </div>
+              <div class="col-lg-4" style="display: inline-block;">
+                <p class="text-white mt-3" style="text-align: left; font-weight: bold;">Average Price (SOL)</p>
+              </div>
+              <div class="col-lg-8" style="display: inline-block;">
+                <p class="text-white mt-3">{{collectiondata.avgPriceSol}}</p>
+              </div>
+              <div class="col-lg-4" style="display: inline-block;">
+                <p class="text-white mt-3" style="text-align: left; font-weight: bold;">24H Volume (SOL)</p>
+              </div>
+              <div class="col-lg-8" style="display: inline-block;">
+                <p class="text-white mt-3">{{collectiondata.volume24Hr}}</p>
+              </div>
+              <div class="col-lg-4" style="display: inline-block;">
+                <p class="text-white mt-3" style="text-align: left; font-weight: bold;">MarketCap (SOL)</p>
+              </div>
+              <div class="col-lg-8" style="display: inline-block;">
+                <p class="text-white mt-3">{{collectiondata.marketCapSol}}</p>
+              </div>
+              <div class="col-lg-4" style="display: inline-block;">
+                <p class="text-white mt-3" style="text-align: left; font-weight: bold;">Average Wash Score</p>
+              </div>
+              <div class="col-lg-8" style="display: inline-block;">
+                <p class="text-white mt-3">{{collectiondata.averageWashScore}}</p>
+              </div>
+              <div class="col-lg-4" style="display: inline-block;">
+                <p class="text-white mt-3" style="text-align: left; font-weight: bold;">Listing Count</p>
+              </div>
+              <div class="col-lg-8" style="display: inline-block;">
+                <p class="text-white mt-3">{{collectiondata.listingCount}}</p>
+              </div>
+              <div class="col-lg-4" style="display: inline-block;">
+                <p class="text-white mt-3" style="text-align: left; font-weight: bold;">Mint Price (SOL)</p>
+              </div>
+              <div class="col-lg-8" style="display: inline-block;">
+                <p class="text-white mt-3">{{collectiondata.mintPriceMode}}</p>
+              </div>
+            </div>
+          </div>
+        </div>   
+        <div class="col-lg-2" style="display: inline-block;"></div>
+      </div>
+    </div>
+
+    <div class="row text-center justify-content-center" style="margin-top: 10px;">
+      <div class="col-lg-12 justify-content-center">
+        <canvas id="canvas4"></canvas>
+      </div>
+    </div>
+
+    <div class="row text-center justify-content-center" style="margin-top: 10px;">
+      <div class="col-lg-12 justify-content-center">
+        <canvas id="canvas5"></canvas>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
